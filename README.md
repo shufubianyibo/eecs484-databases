@@ -4,7 +4,27 @@ SQL schema design and views, Java/Oracle queries, data export, and MongoDB aggre
 
 Coursework portfolio of **Han Sun ([shufubianyibo](https://github.com/shufubianyibo))**. This repository collects source snapshots from local projects so they can be browsed directly from my personal GitHub profile.
 
-## Projects
+## Main projects
+
+### [Relational-to-document export and MongoDB queries — Project 3](project-3/)
+
+A Java/JDBC exporter combines users, cities, and friendship relationships from relational tables into nested JSON documents. Left joins retain users with missing city information, and friendship edges are assembled into per-user data. JavaScript queries then explore the document representation through filtering, relationship traversal, and aggregation, including oldest-friend selection and birth-month counts.
+
+Start with [`GetData.java`](project-3/GetData.java), the [`query1.js`–`query7.js` scripts](project-3/), and the [offline tests](project-3/tests/). This project shows the change in data representation and query style between Oracle and MongoDB.
+
+### [Fakebook relational query application — Project 2](project-2/)
+
+A Java application that runs SQL queries through JDBC against the course Fakebook schema and maps results into typed Java structures. The work focuses on extracting information from related social-network tables using joins, grouping, ordering, and relationship-based queries.
+
+The main implementation is [`StudentFakebookOracle.java`](project-2/project2/StudentFakebookOracle.java). Database accounts are supplied through environment variables in this public copy; see the setup instructions below.
+
+### [Schema, constraints, and views — Project 1](project-1/)
+
+SQL scripts define tables and constraints for users, friendships, cities, events, albums, photos, and related entities. Separate scripts load source data, expose views, and remove the schema, providing the relational foundation for the later query projects.
+
+Review [`createTables.sql`](project-1/createTables.sql), [`createViews.sql`](project-1/createViews.sql), and [`loadData.sql`](project-1/loadData.sql).
+
+## All projects
 
 | Project | Source files |
 | --- | ---: |

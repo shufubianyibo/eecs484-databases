@@ -1,6 +1,6 @@
 # EECS 484 Project 2
 
-Before compiling and running, change the username and password in FakebookOracleMain.java to your uniqname and Oracle password.
+Before compiling and running, set the `ORACLE_USERNAME` and `ORACLE_PASSWORD` environment variables to your course database account. The public driver reads these values from the environment.
 
 To compile, run
 
