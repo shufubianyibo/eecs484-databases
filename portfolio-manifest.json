@@ -1,0 +1,26 @@
+[
+  {
+    "name": "project-1",
+    "source_files": 5,
+    "source_lines_including_scaffolding": 407,
+    "origin": null,
+    "snapshot_commit": null,
+    "file_count": 5
+  },
+  {
+    "name": "project-2",
+    "source_files": 6,
+    "source_lines_including_scaffolding": 1237,
+    "origin": null,
+    "snapshot_commit": null,
+    "file_count": 11
+  },
+  {
+    "name": "project-3",
+    "source_files": 12,
+    "source_lines_including_scaffolding": 726,
+    "origin": null,
+    "snapshot_commit": null,
+    "file_count": 18
+  }
+]
